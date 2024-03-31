@@ -9,7 +9,7 @@ describe("xyz bank sute",()=>{
         cy.LogInWebsite(this.data.URL)
        }) 
     })
-    it.only("Click on Maneger login button",function(){
+    it("Click on Maneger login button",function(){
         //click on the manager button
         cy.ClickOnManagerLoginButton()
         //click on the costmeralogin button
@@ -32,21 +32,21 @@ describe("xyz bank sute",()=>{
         //return back to click on home button
         cy.ClickOnHomePageButton()
     })
-    it("Click On Customer Button",function(){
+    it.skip("Click On Customer Button",function(){
         cy.visit(this.data.LoginUrl)
         cy.AddCustomerLogIn() 
         cy.CustomerDetails(this.data.Fname,this.data.Lname,this.data.Pcode)
         cy.ClickOnCustomerPageButton()
 
     })
-    it("Open Customer Account",function(){
+    it.skip("Open Customer Account",function(){
         cy.visit(this.data.OpenAccountUrl)
         cy.OpenAccountButton()
         cy.SelectCustomerName(this.data.Name)
         cy.SelectCurrency(this.data.Currency)
         cy.ClickProccesButton()
     })
-    it("Open Cusstomer Details",function(){
+    it.skip("Open Cusstomer Details",function(){
         cy.visit(this.data.customerdetalsurl)
         cy.ClickOnCustomerButton()
         cy.NameChecking()
