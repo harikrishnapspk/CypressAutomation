@@ -9,7 +9,7 @@ describe("xyz bank sute",()=>{
         cy.LogInWebsite(this.data.URL)
        }) 
     })
-    it.only("Click on Maneger login button",function(){
+    it("Click on Maneger login button",function(){
         //click on the manager button
         cy.ClickOnManagerLoginButton()
         //click on the costmeralogin button
