@@ -30,6 +30,10 @@ import addcustomerpage from "../support/PageObject/addcustomerpageobjects.cy"
 import OpenAccount from "../support/PageObject/OpenAccountPageObjets.cy"
 import CustomerPage from "../support/PageObject/CustomersPageObects.cy"
 import HomeButtonPage from "../support/PageObject/HomeButtonPageObejects.cy"
+import CustomerpageObject from "../support/PageObject/customerpagebutton.cy"
+import AccountPage from "../support/PageObject/AccountPageObjects.cy"
+import DepositAndWithdra from "../support/PageObject/Deposit&withdraObjects.cy"
+import TransectionPageDetails from "../support/PageObject/TransectionPageObjects.cy"
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
