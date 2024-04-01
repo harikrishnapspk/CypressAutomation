@@ -26,7 +26,7 @@ Cypress.Commands.add("TransectionPageDetails",()=>{
 })
 Cypress.Commands.add("DateSelection",(date1,date2)=>{
     //enter start date
-    TransectionPage.EnterStartDate().invoke('attr', 'min', '2017-12-01T00:00:00');
+    TransectionPage.EnterStartDate().type(date1)
     //enter end date
     TransectionPage.EnterEndDate().type(date2)
 })

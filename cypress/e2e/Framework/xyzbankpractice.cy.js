@@ -48,7 +48,7 @@ describe("xyz bank sute", () => {
             //Transections are visiblation
             cy.TransectionPageDetails()
             //Date selection
-            //cy.DateSelection(this.data.StatDate,this.data.EndDate)
+            cy.DateSelection(this.data.StatDate,this.data.EndDate)
             //Enter LogOut Button
             cy.ENterLogoutButton()
             //return back to click on home button
