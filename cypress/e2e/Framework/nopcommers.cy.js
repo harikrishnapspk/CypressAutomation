@@ -11,6 +11,6 @@ describe("Nop Commers Projects",()=>{
         //click on the log in botton in nopcommers
         cy.LogInNopCommers()
         //Fill the customer details
-        cy.FillDetailsOnUser(this.data.Fname,this.data.Lname,this.data.Day,this.data.Month,this.data.Year,this.data.Email,this.data.UserName,this.data.Cname,this.data.Password,this.data.Repassword)
+        cy.FillDetailsOnUser(this.data.Fname,this.data.Lname,this.data.Day,this.data.Month,this.data.Year,this.data.Email,this.data.Cname,this.data.Password,this.data.Repassword)
     })
 })
