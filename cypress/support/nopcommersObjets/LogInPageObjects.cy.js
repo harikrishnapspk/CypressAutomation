@@ -50,6 +50,12 @@ class LogInPage{
     ClickRegistration(){
         return cy.get('#register-button')
     }
+    Registrationcheck(){
+        return cy.get('.result')
+    }
+    ClickOncontinewButton(){
+        return cy.get('.buttons > .button-1')
+    }
 }
 const LogInPageObjects = new LogInPage
 Cypress.Commands.add("LogInNopCommers",()=>{
@@ -89,6 +95,10 @@ Cypress.Commands.add("FillDetailsOnUser",(Fname,Lname,Day,Month,Year,Email,Cname
     LogInPageObjects.RePassword().type(RePassword)
     //click on the register button
     LogInPageObjects.ClickRegistration().click()
+    //Registraction complete checking
+    LogInPageObjects.Registrationcheck().should("be.visible")
+    //continue button
+    LogInPageObjects.ClickOncontinewButton().click()
 })
 
 export default LogInPage

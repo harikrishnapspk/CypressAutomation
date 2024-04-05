@@ -9,8 +9,10 @@ describe("Nop Commers Projects",()=>{
     })
     it("NopCommersExcerciseProject",function(){
         //click on the log in botton in nopcommers
-        cy.LogInNopCommers()
+        //cy.LogInNopCommers()
         //Fill the customer details
-        cy.FillDetailsOnUser(this.data.Fname,this.data.Lname,this.data.Day,this.data.Month,this.data.Year,this.data.Email,this.data.Cname,this.data.Password,this.data.Repassword)
+        //cy.FillDetailsOnUser(this.data.Fname,this.data.Lname,this.data.Day,this.data.Month,this.data.Year,this.data.Email,this.data.Cname,this.data.Password,this.data.Repassword)
+        //Guest user Place order
+        cy.PlaceOrderNOPcmrs()
     })
 })

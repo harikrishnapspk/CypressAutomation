@@ -35,6 +35,12 @@ import AccountPage from "../support/PageObject/AccountPageObjects.cy"
 import DepositAndWithdra from "../support/PageObject/Deposit&withdraObjects.cy"
 import TransectionPageDetails from "../support/PageObject/TransectionPageObjects.cy"
 import LogInPageObjects from "../support/nopcommersObjets/LogInPageObjects.cy"
+import GuestUserObject from "../support/nopcommersObjets/GuestUserPOobjects.cy"
+import AddCortPage from "../support/DemoWebShop/AddCartPageObjects.cy"
+import GuestUserCheckOutPage from "../support/DemoWebShop/GuestUserCheckOutPageObjects.cy"
+//import {faker} from '@faker-js/faker'
+//import faker from 'faker';
+import DemoWebShopPage from "./DemoWebShop/HomePageObjects.cy"
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
