@@ -38,6 +38,15 @@ import LogInPageObjects from "../support/nopcommersObjets/LogInPageObjects.cy"
 import GuestUserObject from "../support/nopcommersObjets/GuestUserPOobjects.cy"
 import AddCortPage from "../support/DemoWebShop/AddCartPageObjects.cy"
 import GuestUserCheckOutPage from "../support/DemoWebShop/GuestUserCheckOutPageObjects.cy"
+import addcart from "../support/DemoWebShop/AddCart.cy"
+import Add_Cort_Page from "../support/DemoWebShop/AddCartPageObjects.cy"
+import Billingaddress from "../support/DemoWebShop/BillingAddressObjects.cy"
+import Register from "../support/DemoWebShop/RegistrationPageObjects.cy"
+import LogInPage from "../support/DemoWebShop/LogInPageObjects.cy"
+import AddCortToTHeProduct from "../support/DemoWebShop/AddCart.cy"
+import shoping_cart from "../support/DemoWebShop/ShoppingCartPage.cy"
+
+
 //import {faker} from '@faker-js/faker'
 //import faker from 'faker';
 import DemoWebShopPage from "./DemoWebShop/HomePageObjects.cy"

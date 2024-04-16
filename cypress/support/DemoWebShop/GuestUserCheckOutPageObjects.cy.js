@@ -97,10 +97,10 @@ Cypress.Commands.add("GuestUserCheckOutPAge",(Fname,Lname,email,Cname,Countrynam
     GuestUserCheckOutObjects.PhoneNumber().type(Pnumber)
     //enter fax number
     GuestUserCheckOutObjects.FaxNUmber().type(Fnumber)
-    //click on the continew button
-    GuestUserCheckOutObjects.ClickONContinew().click()
 })
 Cypress.Commands.add("ClickOnStorePic",()=>{
+    //click on the continew button
+    GuestUserCheckOutObjects.ClickONContinew().click()
     //Check on the ClickOnStore
     GuestUserCheckOutObjects.ClickOnStorePIc().check()
     //Click on the countinew button

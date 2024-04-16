@@ -1,4 +1,4 @@
-class AddCortPage{
+class Add_Cort_Page{
     SelectRam(){
         return cy.get("#product_attribute_16_6_5")
     }
@@ -24,7 +24,7 @@ class AddCortPage{
         return cy.get("#checkout")
     }
 }
-const AddCortObjects = new AddCortPage
+const AddCortObjects = new Add_Cort_Page
 Cypress.Commands.add("AddToElementOnCart",()=>{
     //Selct The RAM On the Objet
     AddCortObjects.SelectRam().select(1)
@@ -43,4 +43,4 @@ Cypress.Commands.add("AddToElementOnCart",()=>{
     //Click on the CheckOut Button
     AddCortObjects.CheckOut().click()
 })
-export default AddCortPage
+export default Add_Cort_Page
