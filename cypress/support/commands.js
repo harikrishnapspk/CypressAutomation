@@ -120,7 +120,7 @@ Cypress.Commands.add("AlertThirdMethod",()=>{
     cy.window().then((hari)=>{
         cy.stub(hari,'prompt').returns("i am  king")
                 //click on alertmsg
-                cy.get('[onclick="jsPrompt()"]').click()
+                  cy.get('[onclick="jsPrompt()"]').click()
     })
 //successfull msg
 cy.get("#result").should("have.text","You entered: i am  king")

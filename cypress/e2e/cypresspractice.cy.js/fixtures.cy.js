@@ -9,11 +9,11 @@ describe("fixtures_folder",()=>{
             cy.visit(hari.url)
              chandu=hari
            }) 
-        })
+        }) 
         it("login_page",()=>{
 
 
-            //enter the email$password
+            //enter the email$password 
             cy.get('[name="username"]').type(chandu.username,{log:false})
             cy.get('[name="password"]').type(chandu.password,{log:false})
          
