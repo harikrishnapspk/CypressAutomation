@@ -25,15 +25,15 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
-import managerPageObjects from "../support/PageObject/BankManagerPageObjects.cy"
-import addcustomerpage from "../support/PageObject/addcustomerpageobjects.cy"
-import OpenAccount from "../support/PageObject/OpenAccountPageObjets.cy"
-import CustomerPage from "../support/PageObject/CustomersPageObects.cy"
-import HomeButtonPage from "../support/PageObject/HomeButtonPageObejects.cy"
-import CustomerpageObject from "../support/PageObject/customerpagebutton.cy"
-import AccountPage from "../support/PageObject/AccountPageObjects.cy"
-import DepositAndWithdra from "../support/PageObject/Deposit&withdraObjects.cy"
-import TransectionPageDetails from "../support/PageObject/TransectionPageObjects.cy"
+import managerPageObjects from "./XYZbankPOM/BankManagerPageObjects.cy"
+import addcustomerpage from "./XYZbankPOM/addcustomerpageobjects.cy"
+import OpenAccount from "./XYZbankPOM/OpenAccountPageObjets.cy"
+import CustomerPage from "./XYZbankPOM/CustomersPageObects.cy"
+import HomeButtonPage from "./XYZbankPOM/HomeButtonPageObejects.cy"
+import CustomerpageObject from "./XYZbankPOM/customerpagebutton.cy"
+import AccountPage from "./XYZbankPOM/AccountPageObjects.cy"
+import DepositAndWithdra from "./XYZbankPOM/Deposit&withdraObjects.cy"
+import TransectionPageDetails from "./XYZbankPOM/TransectionPageObjects.cy"
 import LogInPageObjects from "../support/nopcommersObjets/LogInPageObjects.cy"
 import GuestUserObject from "../support/nopcommersObjets/GuestUserPOobjects.cy"
 import AddCortPage from "../support/DemoWebShop/AddCartPageObjects.cy"
@@ -53,7 +53,7 @@ import DemoWebShopPage from "./DemoWebShop/HomePageObjects.cy"
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
-  return false
+  return false
 })
 import 'cypress-file-upload';
 import  harikrishna from '../fixtures/login.json'
