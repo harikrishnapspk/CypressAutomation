@@ -23,7 +23,7 @@ describe("checking_alret_messeges",()=>{
     it.skip("third method",()=>{
         cy.window().then((data)=>{
             cy.stub(data,"prompt").returns("i am a king")
-            cy.get(':nth-child(3) > button').click()
+            cy.get(':nth-child(3) > button').click()  
         })
     })
     it("4th method",()=>{
