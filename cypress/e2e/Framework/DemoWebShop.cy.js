@@ -11,7 +11,7 @@ describe("Place Order Without Registration As a geust user",function() {
         
     })
 //create the place order without registration u enter guest user to place order
-it.skip("PlaceOrderWithOutRegistarion",function(){
+it("PlaceOrderWithOutRegistarion",function(){
     //page visibulation
     cy.LogoVisible()
     //click on the product to the cart
@@ -31,11 +31,11 @@ it.skip("PlaceOrderWithOutRegistarion",function(){
     //after conform order
     cy.AftorBookingOrderConformation()
 })
-it.skip("Demoweb shop Register", function () {
+it("Demoweb shop Register", function () {
     // click on Register button
     cy.RegistationPage(this.data.Fname, this.data.Lname, this.data.Email, this.data.password, this.data.Cpassword)
 })
-it('Demoweb shop login', function () {
+it.only('Demoweb shop login', function () {
     cy.LogInIntoTheUser(this.data.Email, this.data.password)
     // click product add to cart
     cy.product_add_tocart()

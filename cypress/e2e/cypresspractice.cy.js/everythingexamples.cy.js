@@ -4,8 +4,13 @@ describe("its practice for moring",()=>{
         cy.fixture("everexample").then((data)=>{
             cy.visit(data.url)
         })
+        cy.url().should("include","/practice")
     })
-    it("radio butttons",()=>{
+    it("sing up the page",()=>{
+        //cy.SingUpPageTotal()
+
+        cy.everythingpraticeExpls()
+        
 
     })
 })

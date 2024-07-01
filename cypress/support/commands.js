@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
+
 import managerPageObjects from "./XYZbankPOM/BankManagerPageObjects.cy"
 import addcustomerpage from "./XYZbankPOM/addcustomerpageobjects.cy"
 import OpenAccount from "./XYZbankPOM/OpenAccountPageObjets.cy"
@@ -45,6 +46,11 @@ import Register from "../support/DemoWebShop/RegistrationPageObjects.cy"
 import LogInPage from "../support/DemoWebShop/LogInPageObjects.cy"
 import AddCortToTHeProduct from "../support/DemoWebShop/AddCart.cy"
 import shoping_cart from "../support/DemoWebShop/ShoppingCartPage.cy"
+
+//everything example page objetcs connetors
+import SingUpObjects from "./EverythingPageObjects/SingUpPOM.cy"
+import practiceAll from "./EverythingPageObjects/practiceexamples.cy"
+
 
 
 //import {faker} from '@faker-js/faker'
