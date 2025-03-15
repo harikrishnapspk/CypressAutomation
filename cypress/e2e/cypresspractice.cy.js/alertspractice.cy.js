@@ -2,7 +2,7 @@ describe("Alerts Practice for 3'models",()=>{
     beforeEach(()=>{
         cy.visit("https://the-internet.herokuapp.com/javascript_alerts")
     })
-    it("it's First Method",()=>{
+    it.only("it's First Method",()=>{
         cy.get('[onclick="jsAlert()"]').click()
         cy.on("window:alert",(data)=>{
             expect(data).to.contains("I am a JS Alert")
@@ -20,7 +20,7 @@ describe("Alerts Practice for 3'models",()=>{
         // cy.on("window:confirm",()=>false)
         
     })
-    it.only("its third method",function(){
+    it("its third method",function(){
         
         cy.window().then((data)=>{
             cy.stub(data,"prompt").returns("i am king of my own kingdom")
@@ -33,11 +33,23 @@ describe("Alerts Practice for 3'models",()=>{
     })
 })
 
-it("date example steps",()=>{
-    cy.get("calender click id").click()
-    cy.get("calender every element inside div element").each((data)=>{
-    let datavalue =data.text()
-    if(datavalue == 18)
-        cy.wrap(data).click()
-})
-})
+// it("date example steps",()=>{
+//     cy.get("calender click id").click()
+//     cy.get("calender every element inside div element").each((data)=>{
+//     let datavalue =data.text()
+//     if(datavalue == 18)
+//         cy.wrap(data).click()
+// })
+// })
+
+// it.only("Authenticated window alert", () => {
+//     //Approch number1
+//     // cy.visit("https://the-internet.herokuapp.com/basic_auth",{auth:{username:"admin",password:"admin"}})
+
+//     // cy.get('div[class="example"] p').should('have.contain','Congratulations!')
+
+//     //Approch number2
+
+//     cy.visit("https://admin:admin@the-internet.herokuapp.com/basic_auth")
+//     cy.get('div[class="example"] p').should('have.contain','Congratulations!')
+// })

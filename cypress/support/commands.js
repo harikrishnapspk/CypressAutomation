@@ -23,9 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
 
+//demoblaze 
+import PlaceOrderDetailsPage from "./DemoBlazeObjects/PlaceOrderDetails.cy"
+import PlaceTheOrderInDirect from "./DemoBlazeObjects/SelectProductAndPlaceOrder.cy"
 import managerPageObjects from "./XYZbankPOM/BankManagerPageObjects.cy"
 import addcustomerpage from "./XYZbankPOM/addcustomerpageobjects.cy"
 import OpenAccount from "./XYZbankPOM/OpenAccountPageObjets.cy"
@@ -62,6 +66,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return false
 })
 import 'cypress-file-upload';
+
+import pspk7 from "../fixtures/demoblaze.json"
+import hari from '../fixtures/DemoWedShopTests.json'
 import  harikrishna from '../fixtures/login.json'
 import PavanKalyan from "../fixtures/parabankdetails.json"
 import pspk from "../fixtures/AutomationLogin.json"
