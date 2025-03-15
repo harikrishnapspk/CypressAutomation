@@ -33,14 +33,14 @@ class PlaceOrderDetailsPage{
 
 const PODPage = new PlaceOrderDetailsPage
 
-Cypress.Commands.add("CustomerDetailsPlaceOrder",()=>{
+Cypress.Commands.add("CustomerDetailsPlaceOrder",(name,country,city,cardno,month,year)=>{
     
-        PODPage.firstname().type("Hari",{force:true})
-        PODPage.country().type("India")
-        PODPage.city().type("hyderabad",{force:true})
-        PODPage.creditcard().type("123456789")
-        PODPage.month().type("02")
-        PODPage.year().type("2000")
+        PODPage.firstname().type(name,{force:true})
+        PODPage.country().type(country)
+        PODPage.city().type(city,{force:true})
+        PODPage.creditcard().type(cardno)
+        PODPage.month().type(month)
+        PODPage.year().type(year)
         PODPage.conform().click()
         PODPage.text().should("be.visible")
         PODPage.data().should("be.visible")
