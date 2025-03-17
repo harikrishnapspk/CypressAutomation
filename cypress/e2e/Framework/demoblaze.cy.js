@@ -14,6 +14,5 @@ it("enter the web site",function(){
         cy.CustomerDetailsPlaceOrder(this.data.name,this.data.country,this.data.city,this.data.CreditCard,this.data.Month,this.data.Year)
     })
 
-
 })
 

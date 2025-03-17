@@ -26,7 +26,9 @@
 
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
-
+//luma website
+import PlaceOderDetails from "./lumaPageObjects/withoutsingupplaceorder.cy"
+import createaccount   from "./lumaPageObjects/createaccount.cy"
 //demoblaze 
 import PlaceOrderDetailsPage from "./DemoBlazeObjects/PlaceOrderDetails.cy"
 import PlaceTheOrderInDirect from "./DemoBlazeObjects/SelectProductAndPlaceOrder.cy"
@@ -67,7 +69,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 })
 import 'cypress-file-upload';
 
-import pspk7 from "../fixtures/demoblaze.json"
+// import pspk7 from "../fixtures/demoblaze.json"
 import hari from '../fixtures/DemoWedShopTests.json'
 import  harikrishna from '../fixtures/login.json'
 import PavanKalyan from "../fixtures/parabankdetails.json"

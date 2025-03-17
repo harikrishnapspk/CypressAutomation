@@ -1,0 +1,13 @@
+{
+    "url"       : "https://magento.softwaretestingboard.com/",
+    "email"     : "test@gmail.com",
+    "fname"     : "Hari",
+    "lname"     :"krishna",
+    "company"   :"royal info tech",
+    "street"    :"bk guda",
+    "city"      :"hyderabad",
+    "zip"       :"12345",
+    "pnumber"   :"9010896009",
+    "State"     :"California",
+    "Country"   :"Libya"
+}
