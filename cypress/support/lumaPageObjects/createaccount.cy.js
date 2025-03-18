@@ -1,4 +1,4 @@
-class createaccount{
+class createaccountobjects{
     email(){
         return cy.xpath('(//input[@type="email"])[2]')
     }
@@ -54,15 +54,19 @@ class createaccount{
         return cy.get('[class="page-title"]')
     }
 }
-const createobjects = new createaccount
+const createobjects = new createaccountobjects
 
-Cypress.Commands.add("createaccountpage",function(Email,Fname,Lname,Cname,Sname,CityName,statename,Zcode,country,Pnumber){
+Cypress.Commands.add("CreateEmailFLname",function(Fname,Lname){
     //entry for the new email account
-    createobjects.email().type(Email,{force:true})
+    cy.wait(10000)
+    const email = `test${Date.now()}@example.com`
+    createobjects.email().type(email,{force:true})
     //type customer first name
     createobjects.fname().type(Fname)
     //type customer last name
     createobjects.lname().type(Lname)
+})
+Cypress.Commands.add("createaccountpagedata",function(Cname,Sname,CityName,statename,Zcode,country,Pnumber){
     //type customer company name
     createobjects.cname().type(Cname)
     //type customer  street addres
@@ -95,4 +99,4 @@ Cypress.Commands.add("createaccountpage",function(Email,Fname,Lname,Cname,Sname,
     createobjects.hometitle().should("be.visible")
 })
 
-export default createaccount
+export default createaccountobjects

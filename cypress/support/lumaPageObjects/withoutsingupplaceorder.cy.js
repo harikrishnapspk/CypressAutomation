@@ -62,7 +62,6 @@ Cypress.Commands.add("PlaceTheOrderWithOutSingUPnew",function(url,url1){
     PlaceOrderPO.ClickCartButton().click({force:true})
     //click to the proceedcheck to the product
     PlaceOrderPO.procedcheck().click({force:true})
-    cy.wait(5000)
 })
 
 

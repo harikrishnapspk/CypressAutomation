@@ -28,7 +28,8 @@
 /// <reference types="cypress-xpath" />
 //luma website
 import PlaceOderDetails from "./lumaPageObjects/withoutsingupplaceorder.cy"
-import createaccount   from "./lumaPageObjects/createaccount.cy"
+import createaccountobjects   from "./lumaPageObjects/createaccount.cy"
+import NewAccountObjects  from "./lumaPageObjects/NewAccountCreateObjects.cy"
 //demoblaze 
 import PlaceOrderDetailsPage from "./DemoBlazeObjects/PlaceOrderDetails.cy"
 import PlaceTheOrderInDirect from "./DemoBlazeObjects/SelectProductAndPlaceOrder.cy"
